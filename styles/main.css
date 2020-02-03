@@ -1,0 +1,337 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Jan 24, 2020, 9:27:12 AM
+    Author     : Osano
+*/
+html, body{
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+}
+/************Sign In Page*********************/
+.signIn_container_parent{
+    background-color: #efefee;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.signInContainer{
+    background-color: white;
+    min-height: 300px;
+    max-height: 100%;
+    width: 450px;
+    box-shadow: rgba(0,0,0,0.1) 0 1px 2px;
+    padding: 20px 35px
+}
+
+.signInContainer form{
+    display: flex;
+    flex-direction: column;
+}
+
+.signInContainer form input[type = "text"],
+.signInContainer form input[type = "email"],
+.signInContainer form input[type = "password"]{
+    font-size: 14px;
+    margin: 10px;
+}
+
+.signInContainer form label{
+    font-size: 14px;
+    margin-left: 10px;
+}
+
+.signInContainer form input[type = "submit"]{
+    background-color: royalblue;
+    color: white;
+    height: 36px;
+    width: 88px;
+    border:none;
+    border-radius: 3px;
+    font-weight: 540;
+    margin-top: 10px;
+    margin-left: 10px;
+    font-size: 16px;
+
+}
+
+.signInContainer .header{
+    padding: 20px , 0;
+    margin-bottom: 20px;
+    margin-left: 10px;
+}
+
+.signInContainer img{
+    width: 225px;
+    margin: 10px 0 10px 10px;
+}
+
+.signInContainer h3{
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 32px;
+    margin: 0;
+    padding-top: 16px;
+    color: black;
+}
+
+.signInContainer .header span{
+    font-size: 18px;
+}
+
+.signInContainer .sig{
+    margin-top: 20px;
+    width: 200px;
+}
+
+.error{
+    color: red;
+    font-size: 14px;
+    font-weight: 400;
+    text-align: center;
+}
+
+/***********Header*********/
+.ap_header_parent{
+    /*Concrete*/
+    background-color: #ededed;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 10%;
+    z-index: 99;
+}
+
+
+.ap_header_cont {
+    position:absolute;
+    width:100%;
+    height:100%;
+    top:0;
+    left:0;
+}
+
+.ap_header_left{
+    position: absolute;
+    left: 0;
+    top:0;
+    width: 15%;
+    height: 100%;
+    margin:0;
+    padding:0;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.ap_header_logo{
+    width:10vw;
+    cursor: pointer;
+}
+
+
+.ap_header_right{
+    position: absolute;
+    right: 0;
+    width: 25%;
+    height: 100%;
+    font-size: 16px;
+    font-weight: 400;
+    color: white;
+
+}
+
+.nav_right_list{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.nav_right_list h3{
+    font-size: 1.25vw;
+    font-weight: 600;
+}
+
+
+.nav_right_items a{
+    margin-left: 35px;
+    font-size: 1.25vw;    
+}
+/******Side*****/
+
+.side_menu_main{
+    position:fixed;
+    left:0;
+    top:10%;
+    height:90%;
+    width:15%;
+    background:#393939;
+}
+
+.side_menu_cont h1{
+    color: white;
+}
+.side_menu_cont i{
+    color: white;
+}
+
+.side_menu_cont a{
+    font-size: 25px;
+}
+
+
+
+
+/******Main*****/
+
+.ap_main_parent{
+    position: absolute;
+    top: 10%;
+    height:90%;
+    width: 85%;
+    left:15%;
+    //background:#f3f3f3;
+    //background:url('https://assets-global.website-files.com/5be21acf3359748deb50b2d9/5c0efdbd4b96b2ada47f85e5_grow-google-analytics-dash-browser-p-800.png')center no-repeat;
+    background-size:cover;
+    //background:red;
+}
+
+.ap_graph_parent{
+    position: relative;
+}
+
+
+.ap_menu_parent{
+    top:20%;
+}
+
+/*******Account Settings****/
+.ap_account_parent{
+    position: relative;
+    top: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ap_account_cont{
+    padding: 20px 35px
+}
+
+.signInContainer form{
+    display: flex;
+    flex-direction: column;
+}
+
+.signInContainer form input[type = "text"],
+.signInContainer form input[type = "email"],
+.signInContainer form input[type = "password"]{
+    font-size: 14px;
+    margin: 10px;
+}
+
+.signInContainer form label{
+    font-size: 14px;
+    margin-left: 10px;
+}
+
+.signInContainer form input[type = "submit"]{
+    background-color: royalblue;
+    color: white;
+    height: 36px;
+    width: 88px;
+    border:none;
+    border-radius: 3px;
+    font-weight: 540;
+    margin-top: 10px;
+    margin-left: 10px;
+    font-size: 16px;
+
+}
+
+/********Account Manager*********/
+.ap_account_create_parent{
+    position: relative;
+    top: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ap_account_create{
+    padding: 20px 35px;
+}
+
+.ap_account_create form{
+    display: flex;
+    flex-direction: column;
+}
+
+.ap_account_create form input[type="text"],
+.ap_account_create form input[type="email"],
+.ap_account_create form input[type="password"],
+.ap_account_create form label{
+    font-size: 14px;
+    margin-left: 10px;
+}
+
+.ap_account_create form input[type="submit"]{
+    background-color: royalblue;
+    color: white;
+    height: 36px;
+    width: 88px;
+    border:none;
+    border-radius: 3px;
+    font-weight: 540;
+    margin-top: 10px;
+    margin-left: 10px;
+    font-size: 16px;
+}
+
+.ap_account_buttons{
+    display: flex;
+    flex-direction: row;
+    width: 44px;
+    height: 36px;
+}
+
+/********Footer**********/
+.ap_footer_partent{
+    background-color: #ededed;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    box-sizing: border-box;
+}
+
+  .watermark_main {
+    position: static;
+    margin-top: 20%;
+    padding: 0;
+    width: 200px;
+    z-index: 50;
+  }
+
+
